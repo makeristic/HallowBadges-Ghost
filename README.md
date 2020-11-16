@@ -1,8 +1,10 @@
 # HallowBadges-Ghost
 
 Here is a fun and simple Halloween project, it is a flashing LED badge or decoration with an ATtiny13a microcontroller, powered by a CR2032 battery.  
-A single battery can power this device for about 6 days / 144 hours.
-It also features an optional surface-mount 2.54mm connector which is [Simple Add-ons (SAO)](https://hackaday.io/project/175182-simple-add-ons-sao) compatible so you can power the badges externally.
+
+* A single CR2032 battery can power this device for about 6 days / 144 hours.
+* The board also features an optional surface-mount 2.54mm connector which is [Simple Add-ons (SAO)](https://hackaday.io/project/175182-simple-add-ons-sao) compatible so you can power the badges externally.
+* You can program the device using a [SOIC-8 Test Clip](https://www.digikey.com/en/products/detail/mueller-electric-co/BU-P5250/9675948) or similar, I attached it to an Arduino-as-ISP setup.
 
 Render of the Front:
 
