@@ -16,7 +16,7 @@ Render of the Back:
 
 The finished product:
 
-![PCB Assembled](images/pcb-assembled.jpg)
+![Hallowbadges Assemble](images/hallowbadges.jpg)
 
 ## Video
 
