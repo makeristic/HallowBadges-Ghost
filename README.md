@@ -28,6 +28,14 @@ I've uploaded a quick video of the boards in action here:
 
 The boards were manufactured by [JLCPCB](https://jlcpcb.com/), use the gerbers folder for production.  The schematic and KiCad files are all included in this repository.
 
+I created three designs, each can be found on Github:
+* [HallowBadges-Bat](https://github.com/makeristic/HallowBadges-Bat)
+* [HallowBadges-Ghost](https://github.com/makeristic/HallowBadges-Ghost)
+* [HallowBadges-Pumpkin](https://github.com/makeristic/HallowBadges-Pumpkin)
+
+![PCB Assembled](images/hallowbadges.jpg)
+
+
 ## Software
 
 A simple Arduino sketch is used to blink the LED's at a random interval, just upload to the board to get it started.  See the example below.
