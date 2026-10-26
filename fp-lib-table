@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name HallowBadges)(type KiCad)(uri ${KIPRJMOD}/HallowBadges.pretty)(options "")(descr "HallowBadges custom outline"))
+)

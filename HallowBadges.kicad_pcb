@@ -491,7 +491,6 @@
       (xy 3.627232 -27.015609) (xy 3.838017 -27.362563) (xy 4.070717 -27.67425) (xy 4.32506 -27.950415)
       (xy 4.600774 -28.190807) (xy 4.897584 -28.395171) (xy 5.215218 -28.563256) (xy 5.553402 -28.694808)
       (xy 5.911863 -28.789574) (xy 6.290328 -28.847301) (xy 6.688524 -28.867736) (xy 6.879167 -28.86451)) (layer F.SilkS) (width 0.01))
-    (fp_line (start -40.27657 38.5939) (end -40.27657 38.5939) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.27657 38.5939) (end -40.22546 38.4786) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.22546 38.4786) (end -40.18645 38.385) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.18645 38.385) (end -40.149 38.2915) (layer Edge.Cuts) (width 0.1))
@@ -3975,7 +3974,6 @@
     (fp_line (start -40.34752 38.8484) (end -40.3224 38.7489) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.3224 38.7489) (end -40.28807 38.6271) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.28807 38.6271) (end -40.27657 38.5939) (layer Edge.Cuts) (width 0.1))
-    (fp_line (start -40.27657 38.5939) (end -40.27657 38.5939) (layer Edge.Cuts) (width 0.1))
   )
 
   (module LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5F89BDD9) (tstamp 5F8B5A2F)

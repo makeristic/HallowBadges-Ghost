@@ -1,0 +1,12 @@
+# KiCad local state, locks and generated backups.
+*.kicad_prl
+*.lck
+*.sch-bak
+*.kicad_pcb-bak
+*.bak
+*.bck
+*-backups/
+
+# Local operating-system files and environment configuration.
+.DS_Store
+.env*
