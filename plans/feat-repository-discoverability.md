@@ -4,7 +4,7 @@
 
 - Readers can identify the ghost badge, find its source and fabrication files, and understand the recorded build limitations.
 - The existing CC BY-SA 4.0 licence and third-party rights are preserved.
-- GitHub has a specific description and relevant topics; hardware source and manufacturing files are unchanged.
+- GitHub has a specific description and relevant topics. Hardware source changes are limited to proven zero-length outline cleanup; manufacturing files remain unchanged.
 
 ## Checklist
 
@@ -16,9 +16,9 @@
 
 ## Evidence and limits
 
-The original README states that boards were manufactured at JLCPCB and reports approximately 144 hours of battery life. The PCB and Gerber job headers identify KiCad 5.1.7. The BOM omits specific resistor and LED values. Firmware is a README example only; Arduino core versions and fuse settings were not recorded. The existing README explicitly grants CC BY-SA 4.0, so MIT is not introduced. Datasheets, pinout imagery and KiCad library material remain under their respective owners' terms.
+The original README states that boards were manufactured at JLCPCB and reports approximately 144 hours of battery life. The PCB and Gerber job headers identify KiCad 5.1.7. The BOM omits specific resistor and LED values. The original firmware was a README example with no recorded core or fuse settings. The correctness pass supplies a compile-checked sketch using MicroCore 2.5.2; original hardware fuses remain unknown. The existing README explicitly grants CC BY-SA 4.0, so MIT is not introduced. Datasheets, pinout imagery and KiCad library material remain under their respective owners' terms.
 
-No hardware, firmware build or KiCad migration was validated by this documentation task.
+The initial discovery pass did not validate hardware, firmware builds or KiCad migration. The subsequent source audit and firmware compilation are recorded in [docs/code-audit-report.md](../docs/code-audit-report.md); physical validation and full KiCad migration remain outside the completed checks.
 
 ## Correctness audit
 
@@ -27,5 +27,5 @@ Acceptance criteria: record schematic/PCB/netlist/BOM/manufacturing consistency,
 - [x] Inspect hardware connectivity, library references, BOM and Gerber job consistency. (completed: 2026-10-26)
 - [x] Run suitable KiCad checks on temporary copies and audit the Arduino example against primary core sources. (completed: 2026-10-26)
 - [x] Remove only zero-length outline segments and register the custom footprint library; rerun DRC without changing rules. (completed: 2026-10-26)
-- [ ] Correct reproducible defects and add a concise audit report with evidence and remaining limitations.
-- [ ] Verify corrections, push atomic commits and update PR #1 for parent review.
+- [x] Correct reproducible defects and add a concise audit report with evidence and remaining limitations. (completed: 2026-10-26)
+- [x] Verify corrections, push atomic commits and update PR #1 for parent review. (completed: 2026-10-26)
