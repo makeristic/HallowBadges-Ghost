@@ -35,12 +35,13 @@ The two-layer PCB uses an ATtiny13A-SSU in SOIC-8, two 0805 LEDs, a BSS138 MOSFE
 * [Schematic PDF](HallowBadges-schematic.pdf) — view the circuit without installing KiCad.
 * [Bill of materials](HallowBadges-BOM.csv) — references, footprints and datasheet links.
 * [KiCad project](HallowBadges.pro), [schematic](HallowBadges.sch) and [PCB layout](HallowBadges.kicad_pcb) — editable source.
+* [Legacy schematic symbol cache](HallowBadges-cache.lib) — complete KiCad 5.1.7 symbol definitions for loading the schematic independently of global symbol libraries.
 * [Gerber and drill files](gerber/) — original manufacturing exports, including a Gerber job file.
 * [Custom outline footprint](HallowBadges.pretty/) — the ghost artwork and board outline.
 * [Images](images/) and [component references](datasheets/) — photographs, renders and reference material.
 * [Arduino sketch](firmware/HallowBadges/HallowBadges.ino) — the flashing-LED example.
 
-The board and Gerber job headers identify **KiCad 5.1.7**. Open `HallowBadges.pro` with the legacy KiCad libraries installed. The project [footprint library table](fp-lib-table) registers `HallowBadges.pretty` as `HallowBadges`; keep that directory beside the project. If using a newer KiCad release, migrate a copy and inspect the converted schematic, footprints and design rules before regenerating outputs.
+The board and Gerber job headers identify **KiCad 5.1.7**. Open `HallowBadges.pro` and keep `HallowBadges-cache.lib` beside the schematic. The restored cache supplies all seven symbol definitions from the pinned KiCad 5.1.7 libraries; [provenance and upstream terms](THIRD_PARTY.md) are included. The project [footprint library table](fp-lib-table) registers `HallowBadges.pretty` as `HallowBadges`; keep that directory beside the project. Standard KiCad footprint and 3D libraries are still needed for library updates and complete renders. If using a newer KiCad release, migrate a copy and inspect the converted schematic, footprints and design rules before regenerating outputs.
 
 The files in `gerber/` are the historical 2020 manufacturing exports. The editable PCB and custom footprint have since had two zero-length outline segments removed; their nonzero contour, copper and connectivity are unchanged. Review the remaining DRC findings in the [audit report](docs/code-audit-report.md), then regenerate and inspect manufacturing outputs before a new run. The historical exports have not been replaced by unchecked nightly-KiCad output.
 
@@ -79,7 +80,7 @@ The original boards were programmed with Arduino-as-ISP and a SOIC-8 clip. ISP r
 
 This work retains its existing [Creative Commons Attribution-ShareAlike 4.0 International licence](https://creativecommons.org/licenses/by-sa/4.0/). The full text is in [LICENSE](LICENSE). Attribute Michael Cutler / Makeristic and preserve the licence when sharing adaptations.
 
-Third-party component datasheets, pinout reference images and KiCad library material retain their respective owners' rights and notices; the project licence does not relicense those materials.
+Third-party component datasheets, pinout reference images and KiCad library material retain their respective owners' rights and notices; the project licence does not relicense those materials. The restored symbol cache is covered by the upstream [KiCad library licence and electronic-design exception](LICENSE-KiCad.md), with attribution and source details in [THIRD_PARTY.md](THIRD_PARTY.md).
 
 ## Questions and contributions
 

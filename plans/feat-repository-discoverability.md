@@ -29,3 +29,9 @@ Acceptance criteria: record schematic/PCB/netlist/BOM/manufacturing consistency,
 - [x] Remove only zero-length outline segments and register the custom footprint library; rerun DRC without changing rules. (completed: 2026-10-26)
 - [x] Correct reproducible defects and add a concise audit report with evidence and remaining limitations. (completed: 2026-10-26)
 - [x] Verify corrections, push atomic commits and update PR #1 for parent review. (completed: 2026-10-26)
+
+## Legacy symbol-cache restoration
+
+- [x] Restore the complete schematic cache from KiCad symbols 5.1.7 at commit `bf475af94877e8fd9cf80e667578ff61835e02bb`, retaining upstream licensing and provenance. (completed: 2026-10-26)
+- [x] Run direct ERC and fresh netlist export on the unchanged schematic; compare connectivity against the saved netlist and PCB. (completed: 2026-10-26; no annotation errors, two existing power-driver marker errors and 24 global library-registration warnings)
+- [x] Update the audit report, README and existing PR with corrected tooling evidence; commit and push. (completed: 2026-10-26)
