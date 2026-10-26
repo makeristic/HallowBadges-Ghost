@@ -12,7 +12,7 @@
 - [x] Refresh the README, add the existing licence text and ignore generated KiCad state. (completed: 2026-10-26)
 - [x] Update and verify the GitHub description and topics. (completed: 2026-10-26)
 - [x] Validate local links, review the full diff and confirm hardware files are unchanged. (completed: 2026-10-26)
-- [ ] Commit, push and open a pull request.
+- [x] Commit, push and open a pull request. (completed: 2026-10-26; [PR #1](https://github.com/makeristic/HallowBadges-Ghost/pull/1))
 
 ## Evidence and limits
 
